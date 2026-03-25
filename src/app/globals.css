@@ -1,0 +1,23 @@
+/* Kara owns this file — Bacon provides the v1 variables as a starting point */
+:root {
+  --g: #34d399;
+  --bg: #0a0f1a;
+  --card: rgba(255, 255, 255, 0.04);
+  --bdr: rgba(255, 255, 255, 0.08);
+  --dim: #475569;
+  --sub: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: -apple-system, system-ui, sans-serif;
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+}

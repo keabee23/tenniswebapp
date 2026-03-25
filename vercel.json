@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "src/app/api/upload/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/detect/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/status/[jobId]/route.ts": {
+      "maxDuration": 10
+    }
+  }
+}
