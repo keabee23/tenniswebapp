@@ -25,7 +25,7 @@ async function extractFrames(
   fps: number,
 ): Promise<string[]> {
   const pattern = path.join(outputDir, 'frame_%05d.ppm');
-  await execFileAsync(ffmpegPath, [
+  await execFileAsync(ffmpegPath!, [
     '-ss', String(startTime),
     '-i', inputPath,
     '-t', String(duration),
@@ -118,7 +118,7 @@ export async function detectContact(
 
   // Thumbnail: extract one frame at contact point
   const thumbPath = path.join(tmpDir, 'thumb.jpg');
-  await execFileAsync(ffmpegPath, [
+  await execFileAsync(ffmpegPath!, [
     '-ss', String(contactTime),
     '-i', videoPath,
     '-frames:v', '1',
