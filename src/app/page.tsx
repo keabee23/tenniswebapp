@@ -1,7 +1,7 @@
 'use client';
 
 import { useReducer, useRef, useCallback, useEffect } from 'react';
-import type { Clip, ClipStatus } from '@/types';
+import type { ClipStatus } from '@/types';
 
 // ─── State ────────────────────────────────────────────────────────────────────
 
