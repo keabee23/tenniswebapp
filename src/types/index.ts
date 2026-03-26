@@ -14,6 +14,8 @@ export interface ServeClip {
   thumbnailUrl: string | null;    // Blob URL of frame at contact point
 }
 
+export type ClipStatus = 'idle' | 'uploading' | 'detecting' | 'ready' | 'error';
+
 export interface Comparison {
   id: string;
   clipA: string;           // ServeClip id
