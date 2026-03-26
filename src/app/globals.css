@@ -1,23 +1,21 @@
-/* Kara owns this file — Bacon provides the v1 variables as a starting point */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
   --g: #34d399;
   --bg: #0a0f1a;
-  --card: rgba(255, 255, 255, 0.04);
-  --bdr: rgba(255, 255, 255, 0.08);
+  --card: rgba(255,255,255,0.04);
+  --bdr: rgba(255,255,255,0.08);
   --dim: #475569;
   --sub: #64748b;
+  --text: #f1f5f9;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+html, body {
   background: var(--bg);
-  color: #fff;
+  color: var(--text);
   font-family: -apple-system, system-ui, sans-serif;
   min-height: 100dvh;
   -webkit-tap-highlight-color: transparent;
 }
+
+button { font-family: inherit; cursor: pointer; }
